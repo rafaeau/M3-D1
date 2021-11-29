@@ -2,8 +2,10 @@
 
 const sumNum = function (num1, num2) {
     if (num1 === num2) {
-        (num1 + num2) * 3
-    } else {num1 + num2}
+        return (num1 + num2) * 3
+    } else {
+        return num1 + num2
+    }
 }
 
 console.log(sumNum(20, 10))
@@ -21,7 +23,7 @@ console.log(checkInt(24, 26))
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
 
 const removeChar = function (string, position) {
-    return string.substr(0, (position)) + string.substr(position + 1)
+    return string.substr(0, position) + string.substr(position + 1)
 }
 
 console.log(removeChar("Strive School", 3))
@@ -55,6 +57,12 @@ console.log(checkRange(43, 75))
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
 
+const stringCopies = function (string, numberOfCopies) {
+    let finalString = string.repeat(numberOfCopies)
+    return finalString
+}
+
+console.log(stringCopies("Strive", 3))
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
