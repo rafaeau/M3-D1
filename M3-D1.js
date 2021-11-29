@@ -10,6 +10,13 @@ console.log(sumNum(20, 10))
 
 /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
 
+const checkInt = function (num1, num2) {
+    if ((num1 === 50 || num2 === 50) || (num1 + num2 === 50)) {
+        return true
+    } else {return false}
+}
+
+console.log(checkInt(24, 26))
 
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
 
