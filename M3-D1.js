@@ -1,5 +1,12 @@
 /* 1. Create a function to calculate the sum of the two given integers. If the two values are the same, return triple their sum. */
 
+const sumNum = function (num1, num2) {
+    if (num1 === num2) {
+        (num1 + num2) * 3
+    } else {num1 + num2}
+}
+
+console.log(sumNum(20, 10))
 
 /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
 
