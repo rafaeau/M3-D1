@@ -20,6 +20,11 @@ console.log(checkInt(24, 26))
 
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
 
+const removeChar = function (string, position) {
+    return string.substr(0, (position)) + string.substr(position + 1)
+}
+
+console.log(removeChar("Strive School", 3))
 
 /* 4. Create a function to find and return the largest of three given integers. */
 
