@@ -28,6 +28,16 @@ console.log(removeChar("Strive School", 3))
 
 /* 4. Create a function to find and return the largest of three given integers. */
 
+const returnLargest = function (num1, num2, num3) {
+    if ((num1 > num2) && (num2 > num3)) {
+        return num1
+    } else if ((num2 > num3) && (num3 > num1)) {
+        return num2
+    } else {
+        return num3
+    }
+}
+console.log(returnLargest(15, 68, 20))
 
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
     Return `true` if they do, return `false` if one (or both) don't. */
